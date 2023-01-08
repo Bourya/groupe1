@@ -1,8 +1,8 @@
 pipeline{
     agent any
-    tools{
+    /*tools{
         maven 'maven-3.8.7'
-    }
+    }*/
     stages{
     /****************/
         stage('Source'){
