@@ -1,3 +1,4 @@
+RUN wget https://downloads.apache.org/maven/maven-3/3.8.7/binaries/apache-maven-3.8.7-bin.tar.gz
 #decrit les etapes de creation d'une image
 FROM openjdk:11-jdk
 LABEL maintainer="com.ca.formation"
