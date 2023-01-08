@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('Source'){
             steps{
-                git branch: 'main', url: 'https://github.com/FamaCoundoul/groupe1.git'
+                git branch: 'main', url: 'https://github.com/Bourya/groupe1.git'
             }
         }
         stage('Build'){
