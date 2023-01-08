@@ -16,10 +16,10 @@ pipeline{
             }
         }
         stage("SonarQube analysis") {
-                steps {
-                    sh 'mvn clean sonar:sonar'
-
-                }
+                  steps{
+                                withSonarQubeEnv(installationName: 'sql'){
+                                    sh 'mvn clean org.sonarsource.scanner.maven:sonar-maven-plugin:3.8.0.2131:sonar'
+                                }
        }
     }
 }
